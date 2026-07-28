@@ -22,7 +22,7 @@ class ContaBancaria:
 
     def sacar(self, valor):
         if valor > self.__saldo:
-            print(f"- Saque de R${valor:,.2f} na conta {self.id} \033[1;31mNEGADO\033[m, __saldo insuficiente!")
+            print(f"- Saque de R${valor:,.2f} na conta {self.id} \033[1;31mNEGADO\033[m, saldo insuficiente!")
         elif valor <= 0:
             print(f"- Depósito de R${valor:,.2f} na conta {self.id} \033[1;31mNEGADO\033[m, valor inválido!")
         else:
